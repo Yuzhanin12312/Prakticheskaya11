@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- лоаде не жидкая -->
+<meta charset= "utf-8">
+<title>анимированный загрузка жиесть</title>
+	<style>
+@keyframes Loading{
+from{
+width: 3px;
+height: 100px;
+
+}
+to{
+width: 500px;
+height: 100px;
+}
+}
+	div{
+background-color: red;
+width: 3px;
+height: 100px;
+margin: 40px 30px;
+border: 1px solid red;
+transform: translate(0px,300px);
+
+}
+.polosa{
+background-color: white;
+width: 500px;
+height: 100px;
+margin: 40px 30px;
+border: 1px solid red;
+transform: translate(100px,350px);
+}
+#animation{
+animation: Loading 3s ease infinite alternate;
+animation-play-state: paused;
+}
+#animation:hover{
+animation-play-state: running;
+}
+#animation{
+background-color: red;
+width: 500px;
+height: 50px;
+margin: 40px 30px;
+border: 1px solid red;
+transform: translate(100px,208px);
+}
+	</style>
+</head>
+<body>
+<div class = "polosa"></div>
+<div id = "animation"></div>
+</body>
+</html>

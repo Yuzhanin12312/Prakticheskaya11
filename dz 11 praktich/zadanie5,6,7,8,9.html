@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 5,6,7,8,9 -->
+<meta charset= "utf-8">
+<title>zadanie5,6,7,8,9</title>
+	<style>
+	div{
+background-color: #ccc;
+width: 120px;
+height: 120px;
+margin: 10px;
+padding: 40px 10px;
+box-sizing: border-box;
+border: 1px solid #333;
+display: inline-block;
+
+
+transition-property: background-color, transform,transform-origin;
+transition-duration: 1s;
+transition-timing-function: ease-in;
+}
+
+.transf1:hover{
+transition-property: transform,background-color;
+transition-duration: 1s;
+transform: rotate(73deg);
+transform-origin: right bottom;
+background-color: red;
+transition-timing-function: ease;
+}
+.transf2:hover{
+transition-property: transform,background-color;
+transition-duration: 2s;
+transform: rotate(172deg);
+transform-origin: left top;
+background-color: purple;
+transition-timing-function: ease-out;
+}
+.transf3:hover{
+transition-property: transform,background-color;
+transition-duration: 3s;
+transform: rotate(152deg);
+transform-origin: center;
+background-color: blue;
+}
+.transf4:hover{
+transition: transform background-color transform-origin 4s ease-in-out 150ms;
+transform: rotate(90deg);
+transform-origin: left bottom;
+background-color: green;
+}
+	</style>
+</head>
+<body>
+<div class="transf1">1</div>
+<div class="transf2">2</div>
+<div class="transf3">3</div>
+<div class="transf4">4</div>
+</body>
+</html>

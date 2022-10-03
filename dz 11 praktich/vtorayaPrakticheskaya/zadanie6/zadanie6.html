@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- сумасшедшие фокусы с шариком -->
+<meta charset= "utf-8">
+<title>а где шарик, а вот он</title>
+	<style>
+@keyframes padenie{
+35%,65%,80%{
+bottom:0;
+
+
+}
+0%{
+bottom:180px;
+background-color: blue;
+left:0;
+animation-timing-function: ease-in;
+
+}
+40%{
+bottom:1500px;
+background-color: green;
+animation-timing-function: ease-in;
+}
+70%{
+bottom:80px;
+animation-timing-function: ease-in;
+}
+90%{
+bottom:1500px;
+animation-timing-function: ease-in;
+}
+100%{
+left: 200px;
+bottom:0;
+animation-timing-function: ease-out;
+}
+}
+#block{
+margin: 0px auto;
+width: 250px;
+height: 250px;
+border: 1px solid red;
+transform: translateY(100px);
+}
+#sharik{
+background-color: red;
+width:30px;
+height:30px;
+border-radius: 15px;
+position:absolute;
+
+animation: padenie 10s infinite;
+}
+	</style>
+</head>
+<body>
+
+<div id = "block"><div id = "sharik"></div></div>
+<img  src="https://s02.yapfiles.ru/files/882402/1051943.gif"></img>
+<P> ищем шарик </P>
+</body>
+</html>
